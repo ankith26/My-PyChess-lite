@@ -1,8 +1,3 @@
-"""
-This file is a part of My-PyChess application.
-In this file, we define the core chess-related functions.
-For a better understanding of the variables used here, checkout docs.txt
-"""
 # A simple function to make a copy of the board
 def copy(board):
     return [[list(j) for j in board[i]] for i in range(2)]       
