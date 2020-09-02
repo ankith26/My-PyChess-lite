@@ -63,15 +63,13 @@ while running:
                 x, y = x // 50, y // 50
                 prevsel = sel
                 sel = [x, y]
+            # If move is legal, do the move - update chess variables
+            if isValidMove(side, board, flags, prevsel, sel):
+                promote = getPromote(win, side, board, prevsel, sel)
+                side, board, flags = makeMove(
+                    side, board, prevsel, sel, flags, promote)
     # Show screen                    
     showScreen(win, side, board, flags, sel)
-    # If move is legal, do the move - update chess variables
-    if isValidMove(side, board, flags, prevsel, sel):
-        promote = getPromote(win, side, board, prevsel, sel)
-        board = move(side, board, prevsel, sel, promote)
-        flags = updateFlags(side, board, prevsel, sel, flags[0])
-        side = flip(side)
-    # Update screen
     pygame.display.update()
     
 # Quit pygame
