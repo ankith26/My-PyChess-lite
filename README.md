@@ -12,7 +12,10 @@ It is perfect for programmers who want to look at the basics of a chess app.
 I have used "piecesprite.png" in this program, which is not created by me. All other resources in this program are created by me.
 
 Piecesprites: Image from Wikipedia.com
+
 This file is licensed under the:
     Creative Commons Attribution-Share Alike 3.0 Unported license.
+    
 Source: http://commons.wikimedia.org/wiki/Template:SVG_chess_pieces
+
 Author: jurgenwesterhof (adapted from work of Cburnett)
